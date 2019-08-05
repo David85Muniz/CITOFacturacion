@@ -1,0 +1,67 @@
+﻿@model CITOFacturacion.Models.Entities.SubDivision
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SubDivision</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LongName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LongName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AKA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AKA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Abbreviation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Abbreviation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code2Char)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code2Char)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code3Char)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code3Char)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SubDivisionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
